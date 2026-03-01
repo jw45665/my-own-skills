@@ -1,20 +1,5 @@
-# Visual Studio
-.vs/
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
+﻿################################################################################
+# Diese .gitignore-Datei wurde von Microsoft(R) Visual Studio automatisch erstellt.
+################################################################################
 
-# Build artifacts
-bin/
-obj/
-
-# IDEs
-.vscode/
-
-# OS
-.DS_Store
-
-# Misc
-*.log
-*.vsidx
+/.vs
