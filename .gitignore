@@ -1,0 +1,20 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build artifacts
+bin/
+obj/
+
+# IDEs
+.vscode/
+
+# OS
+.DS_Store
+
+# Misc
+*.log
+*.vsidx

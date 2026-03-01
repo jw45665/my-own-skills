@@ -1,0 +1,54 @@
+---
+name: add-md-footer
+displayName: Markdown Footer Skill
+description: Versieht Markdown-Dateien automatisch mit einem standardisierten Footer (Titel + Datum)
+version: 1.0.0
+author: JW
+format: powershell
+tags:
+  - markdown
+  - documentation
+  - automation
+  - footer
+
+# Eingabe-Parameter
+inputs:
+  Path:
+    type: string
+    description: Pfad zum Verzeichnis oder zur einzelnen MD-Datei
+    default: "."
+    required: false
+  Force:
+    type: boolean
+    description: Existierende Footer aktualisieren
+    default: false
+    required: false
+
+# Ausgabe-Informationen
+outputs:
+  processed:
+    type: number
+    description: Anzahl der verarbeiteten Dateien
+  skipped:
+    type: number
+    description: Anzahl der übersprungenen Dateien
+  dateApplied:
+    type: string
+    description: Heutiges Datum im Format DD.MM.YYYY
+
+# Konfiguration
+settings:
+  executionPolicy: RemoteSigned
+  encoding: UTF8
+  copyright: "© JW 2026"
+
+# Beispiel-Aufrufe
+examples:
+  - description: "Alle MD-Dateien im aktuellen Verzeichnis verarbeiten"
+    command: ".\.github\skills\add-md-footer\add-md-footer.ps1"
+  
+  - description: "Einzelne Datei verarbeiten"
+    command: ".\.github\skills\add-md-footer\add-md-footer.ps1 -Path '.\Dokumentation.md'"
+  
+  - description: "Footer aktualisieren (Force)"
+    command: ".\.github\skills\add-md-footer\add-md-footer.ps1 -Path '.' -Force"
