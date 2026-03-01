@@ -11,7 +11,6 @@ tags:
   - automation
   - footer
 
-# Eingabe-Parameter
 inputs:
   Path:
     type: string
@@ -24,7 +23,6 @@ inputs:
     default: false
     required: false
 
-# Ausgabe-Informationen
 outputs:
   processed:
     type: number
@@ -36,19 +34,17 @@ outputs:
     type: string
     description: Heutiges Datum im Format DD.MM.YYYY
 
-# Konfiguration
 settings:
   executionPolicy: RemoteSigned
   encoding: UTF8
   copyright: "© JW 2026"
 
-# Beispiel-Aufrufe
 examples:
   - description: "Alle MD-Dateien im aktuellen Verzeichnis verarbeiten"
-    command: ".\.github\skills\add-md-footer\add-md-footer.ps1"
-  
+    command: '.\\.github\\skills\\add-md-footer\\add-md-footer.ps1'
+
   - description: "Einzelne Datei verarbeiten"
-    command: ".\.github\skills\add-md-footer\add-md-footer.ps1 -Path '.\Dokumentation.md'"
-  
+    command: '.\\.github\\skills\\add-md-footer\\add-md-footer.ps1 -Path ''.\\Dokumentation.md'''
+
   - description: "Footer aktualisieren (Force)"
-    command: ".\.github\skills\add-md-footer\add-md-footer.ps1 -Path '.' -Force"
+    command: '.\\.github\\skills\\add-md-footer\\add-md-footer.ps1 -Path ''.'' -Force'

@@ -1,0 +1,5 @@
+{
+    "unsplash_access_key": "YOUR_UNSPLASH_KEY_IF_AVAILABLE",
+    "pexels_api_key": "YOUR_PEXELS_KEY_IF_AVAILABLE",
+    "download_dir": "assets/images"
+}

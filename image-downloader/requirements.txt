@@ -1,0 +1,5 @@
+playwright==1.39.0
+requests
+pillow
+pyyaml
+pytest

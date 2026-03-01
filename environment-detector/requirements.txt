@@ -1,0 +1,5 @@
+# Environment Detector Skill
+# Keine externen Dependencies erforderlich - nutzt nur Python Standard Library
+
+# Optional: Für erweiterte Funktionalität
+# psutil==5.9.8  # Für detaillierte Systeminformationen

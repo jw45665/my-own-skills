@@ -1,8 +1,0 @@
-<Solution>
-  <Folder Name="/add-md-footer/">
-    <File Path="add-md-footer/add-md-footer.ps1" />
-    <File Path="add-md-footer/skill.md" />
-    <File Path="add-md-footer/skill.yaml" />
-    <File Path="add-md-footer/workload-install.ps1" />
-  </Folder>
-</Solution>

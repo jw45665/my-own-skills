@@ -1,0 +1,42 @@
+---
+name: environment-detector
+displayName: Environment Detector
+description: Automatische Erkennung von Umgebungsinformationen (OS, Python, Node.js, VS Code, Extensions, MCP Server) für Metadaten-Konfigurationen
+version: 1.0.0
+author: JW
+format: python
+tags:
+  - environment
+  - detection
+  - metadata
+  - automation
+
+inputs:
+  merge:
+    type: string
+    description: Pfad zur model-metadata.json für Merge-Modus
+    required: false
+    default: ""
+  output:
+    type: string
+    description: Pfad für separate Output-Datei
+    required: false
+    default: ""
+  verbose:
+    type: boolean
+    description: Detaillierte Erkennungsinformationen anzeigen
+    required: false
+    default: false
+
+outputs:
+  environment:
+    type: object
+    description: Erkannte Umgebungsinformationen (OS, Versionen, Extensions, MCP Server)
+
+examples:
+  - description: "Merge in existierende model-metadata.json"
+    command: "python skills/environment-detector/detect_env.py --merge data/model-metadata.json"
+  - description: "Separate Ausgabedatei erstellen"
+    command: "python skills/environment-detector/detect_env.py --output data/env-detected.json"
+  - description: "Mit verbosem Output"
+    command: "python skills/environment-detector/detect_env.py --verbose --merge data/model-metadata.json"

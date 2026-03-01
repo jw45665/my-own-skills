@@ -1,0 +1,57 @@
+---
+name: image-downloader
+displayName: Image Downloader
+description: Automatisiert das Finden und Herunterladen von lizenzfreien Bildern mit Browser-Unterstützung, Cookie-Akzeptanz und Varianten-Generierung
+version: 1.0.0
+author: JW
+format: python
+tags:
+  - images
+  - download
+  - automation
+  - browser
+  - unsplash
+  - pexels
+
+inputs:
+  search:
+    type: string
+    description: Suchbegriff für Bildersuche
+    required: false
+    default: ""
+  page_url:
+    type: string
+    description: URL der Bildseite (z.B. Unsplash-Foto-URL)
+    required: false
+    default: ""
+  out_base:
+    type: string
+    description: Basis-Pfad für Ausgabe (z.B. assets/images/hero)
+    required: true
+    default: ""
+  pick:
+    type: number
+    description: Index des zu wählenden Bildes (1-basiert)
+    required: false
+    default: 1
+  no_headless:
+    type: boolean
+    description: Browser sichtbar anzeigen (für Demo)
+    required: false
+    default: false
+
+outputs:
+  images:
+    type: array
+    description: Heruntergeladene Bilder (Original, 640px, 1280px, WebP-Varianten)
+  credits:
+    type: string
+    description: Lizenzangaben für assets/credits.md
+
+examples:
+  - description: "Nach URL herunterladen"
+    command: "python skills/image-downloader/image_skill.py --page-url \"https://unsplash.com/...\" --out-base assets/images/hero"
+  - description: "Nach Suchbegriff (headless)"
+    command: "python skills/image-downloader/image_skill.py --search \"artificial intelligence\" --pick 1 --out-base assets/images/feature"
+  - description: "Nach Suchbegriff mit sichtbarem Browser"
+    command: "python skills/image-downloader/image_skill.py --search \"workspace\" --pick 1 --out-base assets/images/workspace --no-headless"
