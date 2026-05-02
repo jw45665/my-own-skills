@@ -4,14 +4,24 @@ Eine Sammlung von AI Agent Skills für die automatisierte Unterstützung verschi
 
 ## 📋 Skills
 
-| #  | Titel                          | Funktion                                                                                                                                                                            | Trigger                                                                                                                                                        |
-|----|--------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1  | **Add-MD-Footer**             | Versieht Markdown-Dateien automatisch mit einem standardisierten Footer (Titel + Datum)                                                                                           | "Ergänze die MD-Datei um den Footer" / "Füge Footer hinzu" / "Versehe die Markdown mit Footer"                                                                                                  |
-| 2  | **Environment Detector**       | Automatische Erkennung von Umgebungsinformationen wie OS, Python/Node.js Versionen, VS Code, Extensions und MCP Server für Metadaten-Konfigurationen                    | `python skills/environment-detector/detect_env.py --merge data/model-metadata.json` / "Erkenne die Umgebungsinformationen" |
-| 3  | **Image Downloader**           | Automatisiert das Finden und Herunterladen von lizenzfreien Bildern mit Browser-Unterstützung, Cookie-Akzeptanz, Varianten-Generierung und Lizenzangaben       | `python skills/image-downloader/image_skill.py --search "..." --out-base assets/images/...` / "Lade ein Bild herunter" |
-| 4  | **KI-Club Adaptive Theming**  | Implementiert ein dynamisches, CSS-Variablen-basiertes Theme-System für Websites mit Theme-Switcher UI und LocalStorage-Persistenz                                                | Verwendung, wenn Theme-System für Website benötigt wird, Dark/Light-Mode implementiert werden soll oder Bootstrap-Theme-Integration erforderlich ist |
-| 5  | **LM Studio Model Sync**      | Synchronisiert automatisch die verfügbaren LM-Studio-Modelle mit der chatLanguageModels.json Konfiguration                                                                          | "Synchronisiere die LM-Studio-Modelle" / "Aktualisiere LM-Studio Modelle" / "Stelle die LM Studio Modelle bereit"                                     |
-| 6  | **Ollama Model Sync**         | Synchronisiert automatisch die verfügbaren Ollama-Modelle mit der chatLanguageModels.json Konfiguration                                                                             | "Synchronisiere die Ollama-Modelle" / "Aktualisiere die Ollama-Modelliste" / "Stelle die verfügbaren Ollama-Modelle bereit"                            |
+| # | Titel | Funktion | Trigger |
+|---|---|---|---|
+| 1 | **Add-MD-Footer** | Versieht Markdown-Dateien mit einem standardisierten Footer (Titel + Datum). | "Ergänze die MD-Datei um den Footer" / "Füge Footer hinzu" |
+| 2 | **Buchformat & Artikel** | Erstellt strukturierte Buchkapitel und Fachartikel im definierten Buch-Layout. | "Erstelle ein Kapitel im Buchformat" / "Schreibe einen Artikel im Buchformat" |
+| 3 | **Environment Detector** | Erkennt automatisch OS-, Tool-, IDE- und MCP-Umgebungsinformationen für Metadaten. | `python skills/environment-detector/detect_env.py --merge data/model-metadata.json` |
+| 4 | **Image Downloader** | Findet und lädt lizenzfreie Bilder inkl. Credits und Varianten (z. B. WebP). | `python skills/image-downloader/image_skill.py --search "..." --out-base assets/images/...` |
+| 5 | **KI-Club Adaptive Theming** | Implementiert ein dynamisches CSS-Variablen-Theme-System mit Theme-Switcher. | "Implementiere ein Theme-System" / "Füge Dark/Light-Mode hinzu" |
+| 6 | **LM Studio Model Sync** | Synchronisiert verfügbare LM-Studio-Modelle in die `chatLanguageModels.json`. | "Synchronisiere die LM-Studio-Modelle" |
+| 7 | **Ollama Model Sync** | Synchronisiert verfügbare Ollama-Modelle in die `chatLanguageModels.json`. | "Synchronisiere die Ollama-Modelle" |
+| 8 | **Publish to IIS** | Veröffentlicht ein Vite/React-Projekt auf IIS per Web Deploy mit Verifikation. | "Deploye auf IIS" / "Publish to IIS" |
+| 9 | **Social Media Postings** | Erstellt plattformspezifische Social-Media-Beiträge mit Hashtags und CTA. | "Erstelle einen LinkedIn-/Facebook-/X-Post" |
+
+## 📄 Dokumente
+
+| # | Dokument | Pfad |
+|---|---|---|
+| 1 | **LM Studio Modelle in VS Code verwenden** | `DOCS/LM Studio Modelle in VS Code verwenden.md` |
+| 2 | **Wie man die (lokal) verfügbaren Ollama-Modelle abruft und in VS Code (automatisch) bereitstellt** | `DOCS/Wie man die (lokal) verfügbaren Ollama-Modelle abruft und in VS Code (automatisch) bereitstellt.md` |
 
 ---
 

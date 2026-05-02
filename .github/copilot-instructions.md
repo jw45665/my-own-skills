@@ -12,6 +12,26 @@ Dieses Projekt verwaltet **AI Agent Skills** für automatisierte Aufgaben. Copil
 
 Wenn ein neuer Skill im Projektverzeichnis erkannt wird oder der Nutzer um Hilfe bittet, führe diese Schritte durch:
 
+### 0. 🌐 Vorab-Research (PFLICHT vor jeder Skill-Prüfung)
+Vor jeder Skill-Validierung sollen aktuelle Spezifikationen online geprüft werden (agentskills.io, github.com, code.visualstudio.com und Microsoft Learn via MCP), da lokale Vorgaben veralten können.
+
+Vor jeder Struktur- oder Inhaltsprüfung muss der Agent den **aktuellen Stand** des Skill-Formats recherchieren, da lokale Trainingsdaten oder Inhalte in `README.md` veraltet sein können.
+
+**Pflichtquellen (in dieser Reihenfolge prüfen):**
+1. `https://agentskills.io/` (Spezifikation, Quickstart, Best Practices)
+2. `https://github.com` (insb. aktuelle GitHub-/Agent-/MCP-relevante Hinweise)
+3. `https://code.visualstudio.com/` (Agent-/Copilot-/MCP-Kontext in VS Code)
+4. Microsoft Learn via MCP (offizielle Microsoft-Dokumentation)
+
+**Regel:**
+- Lokale Vorgaben in `README.md` sind nur **Arbeitsbasis**, nicht die letzte Wahrheit.
+- Bei Abweichungen zwischen lokalen Vorgaben und offiziellen/aktuellen Quellen sind die lokalen Vorgaben zu aktualisieren.
+
+**Pflichtaktion bei erkannten Änderungen:**
+1. Abweichung kurz dokumentieren (was hat sich geändert?).
+2. `.github/copilot-instructions.md` entsprechend korrigieren.
+3. Danach erst Skill-Validierung und README-Pflege ausführen.
+
 ### 1. ✅ Strukturvalidierung
 Überprüfe, ob der Skill die folgenden Dateien enthält:
 
@@ -98,6 +118,8 @@ examples:
 
 Nach Validierung: **Automatisch zur `README.md` hinzufügen**
 
+Wichtig: Liste in `README.md` darf nur Skills aufnehmen, die im Projekt-Root liegen. Skills unter `.github` (oder anderen versteckten/Meta-Ordnern) NICHT auflisten.
+
 **Vorgehen:**
 1. Überprüfe, ob der Skill bereits in `README.md` existiert (prüfe auf `name` oder `displayName`)
 2. Falls NICHT vorhanden → Eintrag in die Skills-Tabelle einfügen
@@ -175,6 +197,7 @@ Wenn du folgende Fehler erkennst, behebe sie automatisch:
    d) Aktualisiert README.md mit neuen/aktualisierten Skills
    e) Führt "Footer Check" durch
 ```
+Hinweis: Beim Scannen nur Verzeichnisse im Projekt-Root berücksichtigen; versteckte oder Konfigurationsordner wie `.github` überspringen.
 
 ### Wenn der Nutzer um Hilfe bittet:
 
@@ -199,6 +222,7 @@ if (Select-String -Path "README.md" -Pattern "skill-name|displayName") {
     Write-Output "✅ Neuer Skill - hinzufügen"
 }
 ```
+Prüfe Duplikate nur gegen Einträge, die aus dem Projekt-Root stammen. Ignoriere Skills, die ausschließlich unter `.github` oder ähnlichen Meta-Ordnern liegen.
 
 ---
 
@@ -231,7 +255,7 @@ Eine Sammlung von AI Agent Skills...
   <p style="margin:0;">my-skills</p>
   <p style="margin:0; font-size: 0.9em;">© JW 2026 | Stand: DD.MM.YYYY</p>
 </div>
-```
+Zusatzregel: Die Skills-Tabelle listet nur Skills aus dem Projekt-Root. Keine Auflistung von Skills aus `.github` oder anderen Meta-Ordnern.
 
 ---
 
@@ -245,11 +269,14 @@ Eine Sammlung von AI Agent Skills...
 - **Footer aktualisieren**: Nutze den add-md-footer Skill!
   - Trigger: "Ergänze die MD-Datei um den Footer"
   - Datum: DD.MM.YYYY Format
+- **Nur Project-Root**: Erfasse und liste ausschließlich Skills, die direkt im Projekt-Root liegen; ignoriere `.github`-Inhalte
 
 ---
 
 ## 📚 Referenzen
 
-- MS Learn: GitHub Skills & Copilot Integration
-- Skill-Format: Basierend auf GitHub Skills Struktur
+- Agent Skills (offiziell): https://agentskills.io/
+- GitHub (offiziell): https://github.com
+- Visual Studio Code (offiziell): https://code.visualstudio.com/
+- MS Learn via MCP: Offizielle Microsoft Learn Dokumentation
 - Footer-Format: Definiert in `add-md-footer` Skill
