@@ -15,6 +15,8 @@ Eine Sammlung von AI Agent Skills für die automatisierte Unterstützung verschi
 | 7 | **Ollama Model Sync** | Synchronisiert verfügbare Ollama-Modelle in die `chatLanguageModels.json`. | "Synchronisiere die Ollama-Modelle" |
 | 8 | **Publish to IIS** | Veröffentlicht ein Vite/React-Projekt auf IIS per Web Deploy mit Verifikation. | "Deploye auf IIS" / "Publish to IIS" |
 | 9 | **Social Media Postings** | Erstellt plattformspezifische Social-Media-Beiträge mit Hashtags und CTA. | "Erstelle einen LinkedIn-/Facebook-/X-Post" |
+| 10 | **VS-F5 React/Vite Enable** | Aktiviert F5-Start und Debug-Konfiguration für React/Vite in Visual Studio und VS Code. | "Ich möchte die Anwendung in VS mit F5 starten können" / "React/Vite in Visual Studio debuggen" |
+| 11 | **VS Template Agent** | Erstellt, installiert und validiert robuste Visual-Studio-Projekt- und Item-Templates. | "Erstelle ein Visual-Studio-Template" / "Template aus bestehendem Projekt erzeugen" |
 
 ## 📄 Dokumente
 

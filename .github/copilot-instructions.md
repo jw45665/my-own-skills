@@ -1,4 +1,4 @@
-# Copilot Instructions für my-skills
+# Copilot Instructions für my-own-skills
 
 ## 🎯 Aufgabe
 Dieses Projekt verwaltet **AI Agent Skills** für automatisierte Aufgaben. Copilot ist dafür zuständig:
