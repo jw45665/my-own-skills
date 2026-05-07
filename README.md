@@ -17,6 +17,7 @@ Eine Sammlung von AI Agent Skills für die automatisierte Unterstützung verschi
 | 9 | **Social Media Postings** | Erstellt plattformspezifische Social-Media-Beiträge mit Hashtags und CTA. | "Erstelle einen LinkedIn-/Facebook-/X-Post" |
 | 10 | **VS-F5 React/Vite Enable** | Aktiviert F5-Start und Debug-Konfiguration für React/Vite in Visual Studio und VS Code. | "Ich möchte die Anwendung in VS mit F5 starten können" / "React/Vite in Visual Studio debuggen" |
 | 11 | **VS Template Agent** | Erstellt, installiert und validiert robuste Visual-Studio-Projekt- und Item-Templates. | "Erstelle ein Visual-Studio-Template" / "Template aus bestehendem Projekt erzeugen" |
+| 12 | **VS Code Web Start Config** | Stellt Starterkonfigurationen für Webprojekte in VS Code bereit, inklusive Launch- und Debug-Setups. | "Erstelle eine VS Code Web-Startkonfiguration" / "Füge Web Start Config für VS Code hinzu" |
 
 ## 📄 Dokumente
 
@@ -36,5 +37,5 @@ AI Agent Skills sind spezialisierte Module, die von AI-Assistenten verwendet wer
 <!-- Footer -->
 <div style="text-align: center; font-size: 0.8em; color: #666; margin-top: 2em;">
   <p style="margin:0;">my-skills</p>
-  <p style="margin:0; font-size: 0.9em;">© JW 2026 | Stand: 01.03.2026</p>
+  <p style="margin:0; font-size: 0.9em;">© JW 2026 | Stand: 07.05.2026</p>
 </div>
