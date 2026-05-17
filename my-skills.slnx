@@ -1,0 +1,31 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="README.md" />
+    <File Path=".github/copilot-instructions.md" />
+  </Folder>
+  <Folder Name="/mySkills/">
+    <File Path="mySkills/add-md-footer/skill.md" />
+    <File Path="mySkills/buchformat-artikel/skill.md" />
+    <File Path="mySkills/environment-detector/SKILL.md" />
+    <File Path="mySkills/image-downloader/SKILL.md" />
+    <File Path="mySkills/ki-club-adaptive-theming/SKILL.md" />
+    <File Path="mySkills/lm-studio-sync/SKILL.md" />
+    <File Path="mySkills/ollama-sync/SKILL.md" />
+    <File Path="mySkills/publish-to-iis/SKILL.md" />
+    <File Path="mySkills/social-media-postings/skill.md" />
+    <File Path="mySkills/social-share-metadata/SKILL.md" />
+    <File Path="mySkills/static-web-syncfusion-agentic/SKILL.md" />
+    <File Path="mySkills/vs-f5-react-vite-enable/SKILL.md" />
+    <File Path="mySkills/vs-template-agent/skill.md" />
+    <File Path="mySkills/vscode-web-start-config/SKILL.md" />
+  </Folder>
+  <Folder Name="/myInstructions/">
+    <File Path="myInstructions/html-css-style-color-guide.instructions.md" />
+    <File Path="myInstructions/jw-html-komponenten-entwicklung.instructions.md" />
+    <File Path="myInstructions/jw-react-ui-instructions.md" />
+    <File Path="myInstructions/jw.blazor-component.instructions.md" />
+    <File Path="myInstructions/jw.copilot-instructions.instructions.md" />
+    <File Path="myInstructions/jw.static-website.instructions.md" />
+    <File Path="myInstructions/static-website.instructions.md" />
+  </Folder>
+</Solution>
