@@ -16,8 +16,8 @@ Dieser Skill versieht Markdown-Dateien automatisch mit einem standardisierten Fo
 
 <!-- Footer -->
 <div style="text-align: center; font-size: 0.8em; color: #666; margin-top: 2em;">
-  <p style="margin:0;">Dateititel</p>
-  <p style="margin:0; font-size: 0.9em;">© JW 2026 | Stand: DD.MM.YYYY</p>
+  <p style="margin:0;">Dateititel (projektname)</p>
+  <p style="margin:0; font-size: 0.9em;">© 2026 <a href="https://joerg-walkowiak.de/" style="color: inherit; text-decoration: none;">Jörg Walkowiak</a>. Alle Rechte vorbehalten. | Stand: DD.MM.YYYY</p>
 </div>
 ```
 
