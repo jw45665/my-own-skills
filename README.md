@@ -42,6 +42,12 @@ Meine Sammlung von mir generierter AI Agent Skills und Instructions für die aut
 
 ---
 
+## 🗒️ Über Instructions
+
+Copilot Instructions sind projektspezifische Anweisungsdateien (`.instructions.md`), die GitHub Copilot kontextbezogenes Wissen über Coding-Standards, Architekturentscheidungen und Teamkonventionen bereitstellen. Sie werden automatisch beim Öffnen eines Projekts in VS Code oder Visual Studio geladen und beeinflussen so das Verhalten von Copilot gezielt für den jeweiligen Kontext – ohne dass der Nutzer bei jeder Anfrage erneut Kontext liefern muss.
+
+---
+
 ## 🔧 Über Skills
 
 AI Agent Skills sind spezialisierte Module, die von AI-Assistenten verwendet werden, um spezifische Aufgaben automatisiert auszuführen. Jeder Skill kann durch bestimmte Benutzeranforderungen oder automatische Trigger aktiviert werden und führt vordefinierte Operationen durch, um die gewünschten Ergebnisse zu liefern.
@@ -50,6 +56,6 @@ AI Agent Skills sind spezialisierte Module, die von AI-Assistenten verwendet wer
 
 <!-- Footer -->
 <div style="text-align: center; font-size: 0.8em; color: #666; margin-top: 2em;">
-  <p style="margin:0;">my-skills</p>
+  <p style="margin:0;">my-own-copilot-md-files</p>
   <p style="margin:0; font-size: 0.9em;">© JW 2026 | Stand: 07.05.2026</p>
 </div>
