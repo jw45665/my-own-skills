@@ -6,18 +6,32 @@ Eine Sammlung von AI Agent Skills für die automatisierte Unterstützung verschi
 
 | # | Titel | Funktion | Trigger |
 |---|---|---|---|
-| 1 | **Add-MD-Footer** | Versieht Markdown-Dateien mit einem standardisierten Footer (Titel + Datum). | "Ergänze die MD-Datei um den Footer" / "Füge Footer hinzu" |
-| 2 | **Buchformat & Artikel** | Erstellt strukturierte Buchkapitel und Fachartikel im definierten Buch-Layout. | "Erstelle ein Kapitel im Buchformat" / "Schreibe einen Artikel im Buchformat" |
-| 3 | **Environment Detector** | Erkennt automatisch OS-, Tool-, IDE- und MCP-Umgebungsinformationen für Metadaten. | `python skills/environment-detector/detect_env.py --merge data/model-metadata.json` |
-| 4 | **Image Downloader** | Findet und lädt lizenzfreie Bilder inkl. Credits und Varianten (z. B. WebP). | `python skills/image-downloader/image_skill.py --search "..." --out-base assets/images/...` |
-| 5 | **KI-Club Adaptive Theming** | Implementiert ein dynamisches CSS-Variablen-Theme-System mit Theme-Switcher. | "Implementiere ein Theme-System" / "Füge Dark/Light-Mode hinzu" |
-| 6 | **LM Studio Model Sync** | Synchronisiert verfügbare LM-Studio-Modelle in die `chatLanguageModels.json`. | "Synchronisiere die LM-Studio-Modelle" |
-| 7 | **Ollama Model Sync** | Synchronisiert verfügbare Ollama-Modelle in die `chatLanguageModels.json`. | "Synchronisiere die Ollama-Modelle" |
-| 8 | **Publish to IIS** | Veröffentlicht ein Vite/React-Projekt auf IIS per Web Deploy mit Verifikation. | "Deploye auf IIS" / "Publish to IIS" |
-| 9 | **Social Media Postings** | Erstellt plattformspezifische Social-Media-Beiträge mit Hashtags und CTA. | "Erstelle einen LinkedIn-/Facebook-/X-Post" |
-| 10 | **VS-F5 React/Vite Enable** | Aktiviert F5-Start und Debug-Konfiguration für React/Vite in Visual Studio und VS Code. | "Ich möchte die Anwendung in VS mit F5 starten können" / "React/Vite in Visual Studio debuggen" |
-| 11 | **VS Template Agent** | Erstellt, installiert und validiert robuste Visual-Studio-Projekt- und Item-Templates. | "Erstelle ein Visual-Studio-Template" / "Template aus bestehendem Projekt erzeugen" |
-| 12 | **VS Code Web Start Config** | Stellt Starterkonfigurationen für Webprojekte in VS Code bereit, inklusive Launch- und Debug-Setups. | "Erstelle eine VS Code Web-Startkonfiguration" / "Füge Web Start Config für VS Code hinzu" |
+| 1 | [**Add-MD-Footer**](mySkills/add-md-footer/skill.md) | Versieht Markdown-Dateien mit einem standardisierten Footer (Titel + Datum). | "Ergänze die MD-Datei um den Footer" / "Füge Footer hinzu" |
+| 2 | [**Buchformat & Artikel**](mySkills/buchformat-artikel/skill.md) | Erstellt strukturierte Buchkapitel und Fachartikel im definierten Buch-Layout. | "Erstelle ein Kapitel im Buchformat" / "Schreibe einen Artikel im Buchformat" |
+| 3 | [**Environment Detector**](mySkills/environment-detector/SKILL.md) | Erkennt automatisch OS-, Tool-, IDE- und MCP-Umgebungsinformationen für Metadaten. | `python mySkills/environment-detector/detect_env.py --merge data/model-metadata.json` |
+| 4 | [**Image Downloader**](mySkills/image-downloader/SKILL.md) | Findet und lädt lizenzfreie Bilder inkl. Credits und Varianten (z. B. WebP). | `python mySkills/image-downloader/image_skill.py --search "..." --out-base assets/images/...` |
+| 5 | [**KI-Club Adaptive Theming**](mySkills/ki-club-adaptive-theming/SKILL.md) | Implementiert ein dynamisches CSS-Variablen-Theme-System mit Theme-Switcher. | "Implementiere ein Theme-System" / "Füge Dark/Light-Mode hinzu" |
+| 6 | [**LM Studio Model Sync**](mySkills/lm-studio-sync/SKILL.md) | Synchronisiert verfügbare LM-Studio-Modelle in die `chatLanguageModels.json`. | "Synchronisiere die LM-Studio-Modelle" |
+| 7 | [**Ollama Model Sync**](mySkills/ollama-sync/SKILL.md) | Synchronisiert verfügbare Ollama-Modelle in die `chatLanguageModels.json`. | "Synchronisiere die Ollama-Modelle" |
+| 8 | [**Publish to IIS**](mySkills/publish-to-iis/SKILL.md) | Veröffentlicht ein Vite/React-Projekt auf IIS per Web Deploy mit Verifikation. | "Deploye auf IIS" / "Publish to IIS" |
+| 9 | [**Social Media Postings**](mySkills/social-media-postings/skill.md) | Erstellt plattformspezifische Social-Media-Beiträge mit Hashtags und CTA. | "Erstelle einen LinkedIn-/Facebook-/X-Post" |
+| 10 | [**Social Share Metadata**](mySkills/social-share-metadata/SKILL.md) | Implementiert Open-Graph-, Facebook-, WhatsApp-, Twitter/X- und allgemeine Share-Metadaten robust. | "Facebook-Preview fehlt" / "Open Graph Meta-Tags ergänzen" |
+| 11 | [**Static Web Syncfusion Agentic**](mySkills/static-web-syncfusion-agentic/SKILL.md) | Entwickelt statische Websites komponentenbasiert (HTML/CSS/JS/TS) mit i18n, Theme-System und Syncfusion-First. | "Erstelle eine statische Website mit Komponentenarchitektur" / "Baue eine neue Komponente mit Syncfusion" |
+| 12 | [**VS-F5 React/Vite Enable**](mySkills/vs-f5-react-vite-enable/SKILL.md) | Aktiviert F5-Start und Debug-Konfiguration für React/Vite in Visual Studio und VS Code. | "Ich möchte die Anwendung in VS mit F5 starten können" / "React/Vite in Visual Studio debuggen" |
+| 13 | [**VS Template Agent**](mySkills/vs-template-agent/skill.md) | Erstellt, installiert und validiert robuste Visual-Studio-Projekt- und Item-Templates. | "Erstelle ein Visual-Studio-Template" / "Template aus bestehendem Projekt erzeugen" |
+| 14 | [**VS Code Web Start Config**](mySkills/vscode-web-start-config/SKILL.md) | Stellt Starterkonfigurationen für Webprojekte in VS Code bereit, inklusive Launch- und Debug-Setups. | "Erstelle eine VS Code Web-Startkonfiguration" / "Füge Web Start Config für VS Code hinzu" |
+
+## 🧾 Instructions
+
+| # | Datei | Pfad |
+|---|---|---|
+| 1 | **html-css-style-color-guide.instructions.md** | `myInstructions/html-css-style-color-guide.instructions.md` |
+| 2 | **jw-html-komponenten-entwicklung.instructions.md** | `myInstructions/jw-html-komponenten-entwicklung.instructions.md` |
+| 3 | **jw-react-ui-instructions.md** | `myInstructions/jw-react-ui-instructions.md` |
+| 4 | **jw.blazor-component.instructions.md** | `myInstructions/jw.blazor-component.instructions.md` |
+| 5 | **jw.copilot-instructions.instructions.md** | `myInstructions/jw.copilot-instructions.instructions.md` |
+| 6 | **jw.static-website.instructions.md** | `myInstructions/jw.static-website.instructions.md` |
+| 7 | **static-website.instructions.md** | `myInstructions/static-website.instructions.md` |
 
 ## 📄 Dokumente
 
