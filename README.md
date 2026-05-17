@@ -1,6 +1,6 @@
-# my-skills
+# my-own-copilot-md-files
 
-Eine Sammlung von AI Agent Skills für die automatisierte Unterstützung verschiedener Aufgaben.
+Meine Sammlung von mir generierter AI Agent Skills und Instructions für die automatisierte Unterstützung verschiedener Aufgaben.
 
 ## 📋 Skills
 
@@ -25,13 +25,13 @@ Eine Sammlung von AI Agent Skills für die automatisierte Unterstützung verschi
 
 | # | Datei | Pfad |
 |---|---|---|
-| 1 | **html-css-style-color-guide.instructions.md** | `myInstructions/html-css-style-color-guide.instructions.md` |
-| 2 | **jw-html-komponenten-entwicklung.instructions.md** | `myInstructions/jw-html-komponenten-entwicklung.instructions.md` |
-| 3 | **jw-react-ui-instructions.md** | `myInstructions/jw-react-ui-instructions.md` |
-| 4 | **jw.blazor-component.instructions.md** | `myInstructions/jw.blazor-component.instructions.md` |
-| 5 | **jw.copilot-instructions.instructions.md** | `myInstructions/jw.copilot-instructions.instructions.md` |
-| 6 | **jw.static-website.instructions.md** | `myInstructions/jw.static-website.instructions.md` |
-| 7 | **static-website.instructions.md** | `myInstructions/static-website.instructions.md` |
+| 1 | [**html-css-style-color-guide.instructions.md**](myInstructions/html-css-style-color-guide.instructions.md) | `myInstructions/html-css-style-color-guide.instructions.md` |
+| 2 | [**jw-html-komponenten-entwicklung.instructions.md**](myInstructions/jw-html-komponenten-entwicklung.instructions.md) | `myInstructions/jw-html-komponenten-entwicklung.instructions.md` |
+| 3 | [**jw-react-ui-instructions.md**](myInstructions/jw-react-ui-instructions.md) | `myInstructions/jw-react-ui-instructions.md` |
+| 4 | [**jw.blazor-component.instructions.md**](myInstructions/jw.blazor-component.instructions.md) | `myInstructions/jw.blazor-component.instructions.md` |
+| 5 | [**jw.copilot-instructions.instructions.md**](myInstructions/jw.copilot-instructions.instructions.md) | `myInstructions/jw.copilot-instructions.instructions.md` |
+| 6 | [**jw.static-website.instructions.md**](myInstructions/jw.static-website.instructions.md) | `myInstructions/jw.static-website.instructions.md` |
+| 7 | [**static-website.instructions.md**](myInstructions/static-website.instructions.md) | `myInstructions/static-website.instructions.md` |
 
 ## 📄 Dokumente
 

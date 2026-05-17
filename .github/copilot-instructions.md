@@ -1,10 +1,10 @@
-# Copilot Instructions für my-own-skills
+# Copilot Instructions für my-own-copilot-md-files
 
 ## 🎯 Aufgabe
-Dieses Projekt verwaltet **AI Agent Skills** für automatisierte Aufgaben. Copilot ist dafür zuständig:
-1. Neue Skills zu validieren und zu dokumentieren
-2. Die `README.md` auf dem aktuellen Stand zu halten
-3. Fehlerhafte oder unvollständige Skills zu korrigieren
+Dieses Projekt verwaltet vonmir geschrieben **AI Agent Skills** und **Copilot Instructions** für automatisierte Aufgaben. Copilot ist dafür zuständig:
+1. Neue in den Verzeichnissen **mySkills** und **myInstructions** hinzugefügte Skills und Instructions zu validieren und zu dokumentieren
+2. Die `README.md` ist auf dem aktuellen Stand zu halten
+3. Fehlerhafte oder unvollständige Skills sind zu korrigieren
 
 ---
 
@@ -36,7 +36,7 @@ Vor jeder Struktur- oder Inhaltsprüfung muss der Agent den **aktuellen Stand** 
 Überprüfe, ob der Skill die folgenden Dateien enthält:
 
 ```
-skill-name/
+mySkills/skill-name/
 ├── SKILL.md              ← Hauptdokumentation (PFLICHT)
 ├── skill.yaml            ← Metadaten & Konfiguration (PFLICHT)
 ├── [implementation]      ← .ps1, .py, .js, etc.
@@ -118,18 +118,18 @@ examples:
 
 Nach Validierung: **Automatisch zur `README.md` hinzufügen**
 
-Wichtig: Liste in `README.md` darf nur Skills aufnehmen, die im Projekt-Root liegen. Skills unter `.github` (oder anderen versteckten/Meta-Ordnern) NICHT auflisten.
+Wichtig: Liste in `README.md` darf nur Skills aufnehmen, die im Verzeichnis `mySkills/` liegen. Skills unter `.github` (oder anderen versteckten/Meta-Ordnern) NICHT auflisten.
 
 **Vorgehen:**
 1. Überprüfe, ob der Skill bereits in `README.md` existiert (prüfe auf `name` oder `displayName`)
 2. Falls NICHT vorhanden → Eintrag in die Skills-Tabelle einfügen
 3. Tabelle alphabetisch sortieren nach Titel
-4. Folgendes Format verwenden:
+4. Folgendes Format verwenden – **die erste Spalte (Titel) MUSS immer als Link zur SKILL.md ausgeführt sein**:
 
 ```markdown
 | # | Titel | Funktion | Trigger |
 |---|-------|----------|---------|
-| N | **[displayName]** | [description aus skill.yaml] | [trigger aus SKILL.md] |
+| N | [**displayName**](mySkills/skill-name/SKILL.md) | [description aus skill.yaml] | [trigger aus SKILL.md] |
 ```
 
 **Trigger aus SKILL.md extrahieren:**
@@ -137,7 +137,7 @@ Wichtig: Liste in `README.md` darf nur Skills aufnehmen, die im Projekt-Root lie
 - Nutze konkrete Befehle oder Anforderungen
 - Beispiele:
   - `"Ergänze die MD-Datei um den Footer"` / `"Füge Footer hinzu"`
-  - `python skills/skill-name/script.py --option value`
+  - `python mySkills/skill-name/script.py --option value`
   - `"Synchronisiere die Modelle"` / `"Aktualisiere die Konfiguration"`
 
 ---
@@ -161,7 +161,8 @@ Wenn du folgende Fehler erkennst, behebe sie automatisch:
    - Erstelle `SKILL.md` mit YAML Frontmatter (siehe oben)
    - Kopiere Inhalte von `README.md` nach `SKILL.md`
    - Verifiziere die Struktur
-   - Optionale Aktion: `README.md` löschen (nur Skill-spezifische Files)
+   - `README.md` **NICHT löschen** – sie ist die menschenlesbare Dokumentation des Skills
+   - Falls ein `README.md` im Skill-Verzeichnis strukturell nicht erlaubt sein sollte: Datei nach `docs/<skill-name>.md` verschieben (umbenennen nach Skill-Name), **nicht löschen**
 
 ### Fehler 2: Fehlende YAML Frontmatter
 
@@ -186,18 +187,18 @@ Wenn du folgende Fehler erkennst, behebe sie automatisch:
 ### Wenn der Nutzer einen neuen Skill hinzufügt:
 
 ```
-1. Benutzer legt neuen Skill im Projektverzeichnis ab
+1. Benutzer legt neuen Skill unter mySkills/ ab
 2. Copilot wird aufgefordert: "Kuriere die Skills" oder
-   "Validiere und ergänze die neue Skills"
-   
+   "Validiere und ergänze die neuen Skills"
+
 3. Copilot führt aus:
-   a) Scannt das Verzeichnis nach neuen Skills (*/SKILL.md oder */skill.yaml)
+   a) Scannt mySkills/*/SKILL.md und mySkills/*/skill.yaml
    b) Validiert gegen Checklist (siehe oben)
    c) Korrigiert Fehler automatisch
-   d) Aktualisiert README.md mit neuen/aktualisierten Skills
+   d) Aktualisiert README.md – Skills-Tabelle (mySkills/) und Instructions-Tabelle (myInstructions/)
    e) Führt "Footer Check" durch
 ```
-Hinweis: Beim Scannen nur Verzeichnisse im Projekt-Root berücksichtigen; versteckte oder Konfigurationsordner wie `.github` überspringen.
+Hinweis: Beim Scannen ausschließlich `mySkills/` und `myInstructions/` berücksichtigen; `.github` und andere Meta-Ordner überspringen.
 
 ### Wenn der Nutzer um Hilfe bittet:
 
@@ -222,7 +223,7 @@ if (Select-String -Path "README.md" -Pattern "skill-name|displayName") {
     Write-Output "✅ Neuer Skill - hinzufügen"
 }
 ```
-Prüfe Duplikate nur gegen Einträge, die aus dem Projekt-Root stammen. Ignoriere Skills, die ausschließlich unter `.github` oder ähnlichen Meta-Ordnern liegen.
+Prüfe Duplikate nur gegen Einträge aus `mySkills/`. Ignoriere Skills, die ausschließlich unter `.github` oder ähnlichen Meta-Ordnern liegen.
 
 ---
 
@@ -231,15 +232,22 @@ Prüfe Duplikate nur gegen Einträge, die aus dem Projekt-Root stammen. Ignorier
 Die `README.md` muss folgende Struktur halten:
 
 ```markdown
-# my-skills
+# my-own-copilot-md-files
 
-Eine Sammlung von AI Agent Skills...
+Eine Sammlung von AI Agent Skills und Copilot Instructions...
 
 ## 📋 Skills
 
 | # | Titel | Funktion | Trigger |
 |---|-------|----------|---------|
-| 1 | **Name** | Beschreibung | Trigger-Info |
+| 1 | [**Name**](mySkills/skill-name/SKILL.md) | Beschreibung | Trigger-Info |
+...
+
+## 🧾 Instructions
+
+| # | Datei | Pfad |
+|---|-------|------|
+| 1 | [**dateiname.instructions.md**](myInstructions/dateiname.instructions.md) | `myInstructions/dateiname.instructions.md` |
 ...
 
 ---
@@ -255,7 +263,10 @@ Eine Sammlung von AI Agent Skills...
   <p style="margin:0;">my-skills</p>
   <p style="margin:0; font-size: 0.9em;">© JW 2026 | Stand: DD.MM.YYYY</p>
 </div>
-Zusatzregel: Die Skills-Tabelle listet nur Skills aus dem Projekt-Root. Keine Auflistung von Skills aus `.github` oder anderen Meta-Ordnern.
+```
+Zusatzregel: Die Skills-Tabelle listet nur Skills aus `mySkills/`, die Instructions-Tabelle nur Dateien aus `myInstructions/`. Keine Auflistung aus `.github` oder anderen Meta-Ordnern.
+
+**Link-Pflicht**: Die erste Spalte jeder Tabelle (Skills UND Instructions) MUSS als Markdown-Link zur jeweiligen `.md`-Datei ausgeführt sein.
 
 ---
 
@@ -269,7 +280,8 @@ Zusatzregel: Die Skills-Tabelle listet nur Skills aus dem Projekt-Root. Keine Au
 - **Footer aktualisieren**: Nutze den add-md-footer Skill!
   - Trigger: "Ergänze die MD-Datei um den Footer"
   - Datum: DD.MM.YYYY Format
-- **Nur Project-Root**: Erfasse und liste ausschließlich Skills, die direkt im Projekt-Root liegen; ignoriere `.github`-Inhalte
+- **Nur mySkills/myInstructions**: Erfasse und liste ausschließlich Skills aus `mySkills/` und Instructions aus `myInstructions/`; ignoriere `.github`-Inhalte und Projekt-Root-Dateien
+- **Link-Pflicht**: Erste Spalte in Skills- und Instructions-Tabelle immer als Markdown-Link zur `.md`-Datei
 
 ---
 
